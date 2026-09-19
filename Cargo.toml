@@ -1,0 +1,23 @@
+[package]
+name = "envdrift"
+version = "0.1.0"
+edition = "2021"
+description = "Lints drift between .env.example and your real .env: vars missing, left empty, or undocumented"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/envdrift"
+readme = "README.md"
+keywords = ["dotenv", "env", "lint", "cli", "onboarding"]
+categories = ["command-line-utilities", "development-tools"]
+
+[lib]
+name = "envdrift"
+path = "src/lib.rs"
+
+[[bin]]
+name = "envdrift"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
