@@ -13,6 +13,12 @@ or leaves a variable in `.env` empty after copying it from the example
 without ever filling in a real value. Nothing greps for this automatically
 today — `envdrift` does, in one pass, in three named categories.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
